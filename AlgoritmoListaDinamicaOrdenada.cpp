@@ -42,7 +42,7 @@ void inseremeio(){
 		no->codigo = x;
 		no->prox = NULL;
 	}else{
-		printf("Apos qual numero você quer inserir este elemento? ");
+		printf("Apos qual numero vocÃª quer inserir este elemento? ");
 		scanf("%d",&x);
 		struct tipolista *assist;
 		assist = primeiro;
@@ -50,7 +50,7 @@ void inseremeio(){
 			assist = assist->prox;	
 		}
 		if(assist->codigo != x){
-			printf("VALOR NÃO ENCONTRADO, VOLTANDO AO MENU.\n\n");
+			printf("VALOR NÃƒO ENCONTRADO, VOLTANDO AO MENU.\n\n");
 			system("pause");
 			system("cls");
 			return;
@@ -58,7 +58,7 @@ void inseremeio(){
 		int y;
 		struct tipolista *no;
 		no = (struct tipolista*)malloc(sizeof(struct tipolista));
-		printf("Digite o valor que você quer inserir: ");
+		printf("Digite o valor que vocÃª quer inserir: ");
 		scanf("%d",&y);
 		no->codigo=y;
 		no->prox = assist->prox;
@@ -140,7 +140,7 @@ int main(){
 			
    			case 0:
    				system("cls");
-   				printf("Kraken viadinho kkkkk, saindo do programa.");
+   				printf("Finalizando o sistema...");
      		break;
      		
      		default:
